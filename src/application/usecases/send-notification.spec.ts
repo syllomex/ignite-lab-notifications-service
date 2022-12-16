@@ -1,4 +1,4 @@
-import { CreateNotificationRepository } from '../../domain/repositories'
+import { CreateNotificationRepository } from '../repositories'
 import { Notification } from '../../domain/entities'
 import { SendNotification } from './send-notification'
 import { MockProxy } from '../../utils/types'
