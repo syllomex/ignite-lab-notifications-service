@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common'
 import { AppController } from './app.controller'
-import { CryptoService, PrismaService } from './services'
+import { CryptoService, PrismaService } from './infra/services'
 
 @Module({
   imports: [],

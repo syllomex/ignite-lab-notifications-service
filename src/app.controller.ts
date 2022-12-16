@@ -1,6 +1,6 @@
 import { Body, Controller, Post } from '@nestjs/common'
 import { CreateNotificationDTO } from './dto/notification/create'
-import { CryptoService, PrismaService } from './services'
+import { CryptoService, PrismaService } from './infra/services'
 
 @Controller('notifications')
 export class AppController {
