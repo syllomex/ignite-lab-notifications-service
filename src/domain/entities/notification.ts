@@ -2,6 +2,7 @@ import { Replace } from 'src/utils/types'
 import { NotificationContent } from './notification-content'
 
 export interface NotificationProps {
+  id: string
   recipientId: string
   content: NotificationContent
   category: string
@@ -17,6 +18,10 @@ export class Notification {
       ...props,
       createdAt: props.createdAt ?? new Date(),
     }
+  }
+
+  public get id() {
+    return this.props.id
   }
 
   public get content() {
@@ -45,5 +50,9 @@ export class Notification {
 
   public get createdAt() {
     return this.props.createdAt
+  }
+
+  public get recipientId() {
+    return this.props.recipientId
   }
 }
