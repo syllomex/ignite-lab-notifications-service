@@ -3,6 +3,9 @@ import { InvalidLengthError } from '../errors'
 export class NotificationContent {
   private readonly content: string
 
+  public static MAX_LENGTH = 240
+  public static MIN_LENGTH = 5
+
   constructor(content: string) {
     this.validate(content)
     this.content = content
